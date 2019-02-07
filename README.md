@@ -2,8 +2,7 @@
 
 Easy and simple library to handle dragging and dropping of files on the browser.
 
-
->Optimized Production Build - https://github.com/dyingg/js-drop-file/blob/master/dist/main.js
+> Optimized Production Build - https://github.com/dyingg/js-drop-file/blob/master/dist/main.js
 
 ## Usage
 
@@ -11,32 +10,33 @@ Easily start using by downloading the optimized production build and importing, 
 
 ```html
 <head>
-  <script src="https://raw.githubusercontent.com/dyingg/js-drop-file/master/dist/main.js"> </script>
-<head>
-<body>
-    <h1> Drop Files</h1>
-    <style>
-    #box {
-        height: 500px;
-        width: 500px;
-        border: 2px dashed darkblue;
-    }
-    </style>
-    <div id="box">
-    </div>
-    <script>
-        var DropHandler = new DropFile( "box", { 
-            fileType : "json"
+  <script src="main.js"></script>
+  <head>
+    <body>
+      <h1>Drop Files</h1>
+      <style>
+        #box {
+          height: 500px;
+          width: 500px;
+          border: 2px dashed darkblue;
+        }
+      </style>
+      <div id="box"></div>
+      <script>
+        var DropHandler = new DropFile("box", {
+          fileType: "json"
         });
-    
-        DropHandler.onError((msg) => {
-            console.log(msg);
-        })
-        DropHandler.onFile((msg) => {
-            console.log(msg);
-        })
-    </script>
-</body>
+
+        DropHandler.onError(msg => {
+          console.log(msg);
+        });
+        DropHandler.onFile(msg => {
+          console.log(msg);
+        });
+      </script>
+    </body>
+  </head>
+</head>
 ```
 
 ## Documentation
