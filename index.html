@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <script src="src/index.js" ></script>
+</head>
+<body>
+    <h1> Drop Files</h1>
+
+
+    
+
+    <style>
+    #box {
+        height: 500px;
+        width: 500px;
+        border: 2px dashed darkblue;
+    }
+    </style>
+
+
+    <div id="box">
+
+    </div>
+
+    <script>
+        var DropHandler = new DropFile( "box", { 
+            fileType : "json"
+        });
+    
+        DropHandler.onError((msg) => {
+            console.log(msg);
+        })
+        DropHandler.onFile((msg) => {
+            console.log(msg);
+        })
+
+       
+    
+        
+        </script>
+</body>
+</html>
