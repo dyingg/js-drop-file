@@ -18,7 +18,7 @@ Easily start using by downloading the optimized production build and importing, 
 
 ## Documentation
 
-The DropFile class is exposed publicly by the script.
+The DropFile class is exposed publicly by default.
 
 ```js
 //Start by creating instance of drop file.
