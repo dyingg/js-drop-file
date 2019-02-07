@@ -13,8 +13,31 @@ Easily start using by downloading the optimized production build and importing, 
 <head>
   <script src="https://raw.githubusercontent.com/dyingg/js-drop-file/master/dist/main.js"> </script>
 <head>
+<body>
+    <h1> Drop Files</h1>
+    <style>
+    #box {
+        height: 500px;
+        width: 500px;
+        border: 2px dashed darkblue;
+    }
+    </style>
+    <div id="box">
+    </div>
+    <script>
+        var DropHandler = new DropFile( "box", { 
+            fileType : "json"
+        });
+    
+        DropHandler.onError((msg) => {
+            console.log(msg);
+        })
+        DropHandler.onFile((msg) => {
+            console.log(msg);
+        })
+    </script>
+</body>
 ```
-
 
 ## Documentation
 
@@ -22,11 +45,13 @@ The DropFile class is exposed publicly by default.
 
 ```js
 //Start by creating instance of drop file.
-var fileHandler = new DropFile();
+
+//Create an instance that handles drops on given target ID
+var fileHandler = new DropFile("Target ID");
 
 // Alternatively you can constraint the file extension by filtering using
 
-var fileHandler = new DropFile({
+var fileHandler = new DropFile("Target ID", {
   fileType: "json"
 });
 
