@@ -1,6 +1,19 @@
-# js-drop-file
+# JS DROP FILE
 
 Easy and simple drag and drop files on the browser
+
+Optimized Production Build - https://github.com/dyingg/js-drop-file/blob/master/dist/main.js
+
+## Usage
+
+Easily start using by downloading the optimized production build and importing, such as
+
+```html
+<head>
+  <script src="https://raw.githubusercontent.com/dyingg/js-drop-file/master/dist/main.js"> </script>
+<head>
+```
+
 
 ## Documentation
 
