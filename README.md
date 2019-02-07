@@ -91,4 +91,4 @@ Here the returned message is one of the following strings
 
 #### implementation notes (ignore)
 
-- Drag required both ondrop and ondragover to be defined.
+- Drag requires both ondrop and ondragover to be defined.
