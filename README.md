@@ -3,6 +3,7 @@
 Easy and simple library to handle dragging and dropping of files on the browser.
 
 > Optimized Production Build - https://github.com/dyingg/js-drop-file/blob/master/dist/main.js
+> Running Example (download and use) - https://github.com/dyingg/js-drop-file/tree/master/examples
 
 ## Usage
 
