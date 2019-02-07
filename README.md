@@ -42,7 +42,7 @@ Easily start using by downloading the optimized production build and importing, 
 
 ## Documentation
 
-The DropFile class is exposed publicly by default.
+The DropFile class is exposed globally by default.
 
 ```js
 //Start by creating instance of drop file.
