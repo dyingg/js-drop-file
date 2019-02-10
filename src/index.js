@@ -24,7 +24,7 @@ class DropFile {
 
     console.log("Added drop handler.");
 
-    this.handleFile == undefined;
+    this.handleFile = undefined;
     //Create the file reader
     this.fileReader = new FileReader();
 
